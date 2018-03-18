@@ -3,7 +3,7 @@ function doPost(e) {
   
   payload = e.parameter;
   
-  //MailApp.sendEmail("aj.addons@gmail.com",'doPost ran', 'it ran okay' + JSON.stringify(payload))
+  //MailApp.sendEmail("example@gmail.com",'doPost ran', 'it ran okay' + JSON.stringify(payload))
   
   if (payload.getOptionList === "true") {
     return ContentService.createTextOutput(makeListOfSS());
