@@ -7,7 +7,7 @@ try{
   dataBaseRecordID = d.getTime();
   
   ssID = data.ssID;
-  //MailApp.sendEmail("aj.addons@gmail.com",'it ran', 'it ran okay' + ssID)
+  //MailApp.sendEmail("example@gmail.com",'it ran', 'it ran okay' + ssID)
 
   ss = SpreadsheetApp.openById(ssID);
   sh = ss.getSheets()[0];
@@ -16,7 +16,7 @@ try{
   
   return "Success!";
 }catch(e) {
-  //MailApp.sendEmail("aj.addons@gmail.com",'it ran', 'it ran okay' + e.stack)
+  //MailApp.sendEmail("example@gmail.com",'it ran', 'it ran okay' + e.stack)
   return "Error: " + e.message + "<br>" + e.stack;
 }
 }
